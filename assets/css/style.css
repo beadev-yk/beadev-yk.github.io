@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+  /* margin: 0;
+  padding: 0; */
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  --color-background: #194e48;
+  --color-body: #fcf5e5;
+  --color-base: #113632;
+  --color-heading: #d6efc7;
+  --color-brand1: #fac85b;
+  --width-sidebar: 240px;
+}
+body {
+  color: white;
+  background-color: var(--color-background);
+}
+
+h1 h2 h3 h4 h5 h6 {
+  color: var(--color-heading);
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+  color: var(--color-body);
+  transition: all 0.4s ease-in-out;
+}
+
+a:hover {
+  color: var(--color-brand1);
+}
+img {
+  width: 100%;
+}
+.full-height{
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+.text-brand{
+color: #ffbe31;
+}
+
+/* NAVBAR */
+.navbar{
+  background: var(--color-base);
+}
+.navbar .nav-link {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-body);
+}
+#on-hover:hover {
+  color: var(--color-brand1);
+}
+
+.btn-brand{
+  color: var(--color-background);
+  font-weight: 700;
+  background-color: var(--color-brand1);
+  border-color: #194e48;
+}
+.btn-brand:hover,
+.btn-brand:focus{
+  color: var(--color-background);
+  background-color: #ffbe31;
+  border-color: #113632;
+}
+.custom-link{
+font-weight: 700;
+position: relative;
+}
+.custom-link::after{
+content:"";
+width:0%;
+height: 2px;
+background-color: var(--color-brand1);
+position: absolute;
+left: 0;
+top: 110%;
+transition: all 0.4s ease-in-out;
+}
+.custom-link:hover::after{
+width:100%;
+}
+
+.iconbox{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+.rounded-4{
+  border-radius: 1.2rem;
+}
+
+.shadow-effect{
+  transition: all 0.5s;
+}
+.shadow-effect:hover{
+  box-shadow: -5px 5px 0 0 var(--color-brand1);
+}
+.bg-base{
+  background-color: var(--color-base);
+}
+.custom-card{
+  height: 100%;
+}
+.custom-card .custom-card-image{
+  overflow: hidden;
+}
+.custom-card .custom-card-image img{
+width: 30rem;
+height: 15rem;
+object-fit: cover;
+transition: all 0.5s ease-in-out;
+}
+
+.custom-card:hover .custom-card-image img{
+  transform: scale(1.05);
+}
+.contact-card{
+  height: 5rem;
+}
+.contact-card .contact-card-icon{
+  overflow: hidden;
+}
+.contact-card .contact-card-image i{
+font-weight: 64px;
+object-fit: cover;
+transition: all 0.5s ease-in-out;
+}
+
+.contact-card:hover .contact-card-image img{
+  transform: scale(1.05);
+}
+
+@media (max-width:992px) {
+  body{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(
+        to left,
+        rgb(25, 78, 72, 0.75),
+        rgb(25, 78, 72, 0.9)
+      ),
+      url(../images/Background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+ 
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    min-height: 100vh;
+    width: var(--width-sidebar);
+    background: linear-gradient(
+        to right,
+        rgb(25, 78, 72,0.5),
+        rgb(25, 78, 72, 0.75),
+        rgb(25, 78, 72, 0.9)
+      ),
+      url(../images/LADDER.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .navbar-brand img{
+    border: 6px solid var(--color-background);
+  }
+  #content-wrapper{
+    padding-left: var(--width-sidebar);
+  }
+}
