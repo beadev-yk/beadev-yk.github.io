@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/aos.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="icon" href="assets/images/Yashwant.jpeg" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <title>Yashwant Kushwaha</title>
   </head>
@@ -21,8 +22,22 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light navbar-dark fixed-top">
       <div class="container flex-lg-column">
-        <a class="navbar-brand mb-lg-4 m-lg-auto" href="#"
-          ><span class="h3 fw-bold d-block d-lg-none">Yashwant Kushwaha</span>
+        <!-- Profile Image and Name for Small Screens -->
+        <a
+          class="navbar-brand d-flex align-items-center mb-lg-4 m-lg-auto"
+          href="#"
+        >
+          <img
+            class="rounded-circle me-2 d-lg-none"
+            src="assets/images/Yashwant.jpeg"
+            alt="Yashwant's image"
+            style="width: 40px; height: 40px"
+          />
+          <span class="h6 d-block fw-bold d-lg-none ms-2 mb-0"
+            >Yashwant Kushwaha</span
+          >
+        </a>
+        <a class="navbar-brand mb-lg-4 m-lg-auto" href="#">
           <img
             class="d-none d-lg-block rounded-circle"
             src="assets/images/Yashwant.jpeg"
@@ -106,35 +121,49 @@
       <section id="home" class="full-height px-lg-5">
         <div class="container">
           <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-12">
               <h1
-                class="display-4 fw-bold"
+                id="typed-text-container"
+                class="display-6 fw-bold"
                 data-aos="fade-up"
                 data-aos-easing="ease-in-sine"
               >
-                I'M A <span class="text-brand"> WEB DEVELOPER </span> .
+                I'M A <span id="typed-text" class="text-brand"></span>
               </h1>
               <p
-                class="lead mt-3 mb-3"
+                class="lead mt-3 mb-3 w-75"
                 data-aos="fade-up"
                 data-aos-delay="150"
                 data-aos-easing="ease-in-sine"
               >
                 I am Yashwant Kushwaha. I build high performing and responsive
-                web application's UI. Pursuing a challenging role as a Full
-                Stack or Front-End Developer, leveraging my expertise in web
+                web application's UI and REST APIs. Pursuing a challenging role
+                as a Full Stack Developer, leveraging my expertise in web
                 development using JavaScript and related libraries. Proven
-                skills over MERN stack, backed by relevant certifications.
+                skills over MERN stack, backed by relevant certifications and
+                self developed and deployed projects.
               </p>
               <div
+                class="d-flex flex-column flex-md-row align-items-start justify-content-start gap-3"
                 data-aos="fade-up"
-                data-aos-delay="300"
+                data-aos-delay="100"
                 data-aos-easing="ease-in-sine"
               >
-                <a href="#projects" class="btn btn-brand me-3"
-                  >Explore My Work</a
+                <a href="#projects" class="btn btn-brand">
+                  <i class="fa-solid fa-briefcase me-2"></i> Explore My Work
+                </a>
+                <a href="#contact" class="btn btn-brand">
+                  <i class="fa-solid fa-handshake me-2"></i> Let's Connect!
+                </a>
+                <a
+                  href="./assets/Yashwant.pdf"
+                  title="Click to download my resume"
+                  download="Yashwant.pdf"
+                  target="_blank"
+                  class="btn btn-brand"
                 >
-                <a href="#" class="custom-link">Call: +91-8109080341</a>
+                  <i class="fa-solid fa-download me-2"></i> Download Resume
+                </a>
               </div>
             </div>
           </div>
@@ -159,16 +188,22 @@
                 data-aos-delay="150"
                 data-aos-easing="ease-in-sine"
               >
-                Committed
-                <span class="text-brand fw-normal">Front-End Developer</span>
-                with <span class="text-brand fw-normal">2+</span> years of work
-                experience and skilled in team collaboration and mentoring.
-                Quick learner with a strong foundation in HTML, CSS, and
-                JavaScript. Eager to work on MERN stack and tackle new
-                challenges and contribute to innovative projects. Developed
-                assessment tools using
-                <span class="text-brand fw-normal">Generative AI</span> tools
-                for onboarding and certification processes.
+                <span class="text-brand fw-normal"
+                  >~4 year experienced Full-Stack Developer</span
+                >
+                with a strong foundation in the
+                <span class="text-brand fw-normal">MERN stack</span>,
+                specialising in <span class="text-brand fw-normal">React</span>,
+                <span class="text-brand fw-normal">Node.js</span>,
+                <span class="text-brand fw-normal">Express</span>,
+                <span class="text-brand fw-normal">MongoDB</span>,
+                <span class="text-brand fw-normal">TypeScript</span>, and
+                <span class="text-brand fw-normal">SQL</span>. Passionate about
+                building scalable web applications and optimising performance
+                while contributing to
+                <span class="text-brand fw-normal">Agile methodologies</span>.
+                Skilful at mentoring, improving code quality, and collaborating
+                with cross-functional teams to deliver robust solutions.
               </p>
             </div>
           </div>
@@ -187,38 +222,217 @@
               >
                 Work Experience
               </h1>
-              <p
-                class="lead mt-4 px-2"
-                data-aos="fade-up"
-                data-aos-delay="150"
-                data-aos-easing="ease-in-sine"
-              >
-                Senior Systems Engineer | Infosys Pvt. Ltd. |
-                <span class="fw-bold text-brand">2021-Present</span>
-              </p>
-              <ul
-                class="list-group px-5"
-                data-aos="fade-up"
-                data-aos-delay="300"
-                data-aos-easing="ease-in-sine"
-              >
-                <li>
-                  Developed professional web applications with exceptional user
-                  experience.
-                </li>
-                <li>
-                  Successfully resolved complex code issues, contributing to the
-                  team's efficiency.
-                </li>
-                <li>
-                  Proficiently used GitHub Co-pilot and Prompt Engineering to
-                  build automated webpage.
-                </li>
-                <li>
-                  Cleared multiple certifications showcasing comprehensive
-                  domain knowledge.
-                </li>
-              </ul>
+              <div>
+                <p
+                  class="lead mt-4 px-2"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <span class="fw-bold">Full Stack Developer</span> |
+                  <span class="fw-bold">Randstad (Client J&J)</span> |
+                  <span class="fw-bold text-brand">Aug 2024 - Present</span>
+                </p>
+                <ul
+                  class="list-group px-5"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <li>
+                    Developed and optimised
+                    <span class="text-brand fw-normal"
+                      >scalable web applications</span
+                    >
+                    using <span class="text-brand fw-normal">React</span>,
+                    <span class="text-brand fw-normal">Node.js</span>,
+                    <span class="text-brand fw-normal">Express</span>, and
+                    <span class="text-brand fw-normal">SQL</span>.
+                  </li>
+                  <li>
+                    Improved API response times by
+                    <span class="text-brand fw-normal">30%</span>, enhancing
+                    backend
+                    <span class="text-brand fw-normal">performance</span> and
+                    <span class="text-brand fw-normal">scalability</span>.
+                  </li>
+                  <li>
+                    Led
+                    <span class="text-brand fw-normal"
+                      >state management optimisations</span
+                    >, reducing UI lag by
+                    <span class="text-brand fw-normal">20%</span>.
+                  </li>
+                  <li>
+                    Ensured
+                    <span class="text-brand fw-normal">code quality</span>
+                    through rigorous peer reviews,
+                    <span class="text-brand fw-normal"
+                      >SonarQube-based code improvements</span
+                    >.
+                  </li>
+                  <li>
+                    Maintained
+                    <span class="text-brand fw-normal"
+                      >90% average threshold</span
+                    >, improving
+                    <span class="text-brand fw-normal">stability</span> and
+                    reducing
+                    <span class="text-brand fw-normal">technical debt</span>.
+                  </li>
+                  <li>
+                    Actively contributed to
+                    <span class="text-brand fw-normal">Agile workflows</span>,
+                    including sprint planning, backlog grooming, and effort
+                    estimation.
+                  </li>
+                  <li>
+                    Led
+                    <span class="text-brand fw-normal"
+                      >technical hiring efforts</span
+                    >, conducting interviews and building a
+                    <span class="text-brand fw-normal"
+                      >strong development team</span
+                    >.
+                  </li>
+                  <li>
+                    Collaborated with BAs & QAs to define
+                    <span class="text-brand fw-normal"
+                      >Acceptance Criteria</span
+                    >
+                    and
+                    <span class="text-brand fw-normal"
+                      >System Integration Testing (SIT)</span
+                    >
+                    criteria.
+                  </li>
+                </ul>
+              </div>
+              <!-- divider here to separate -->
+              <hr class="my-4" />
+              <div>
+                <p
+                  class="lead mt-4 px-2"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <span class="fw-bold">Application Developer</span> |
+                  <span class="fw-bold">Accenture</span> |
+                  <span class="fw-bold text-brand">Jan 2024 - Aug 2024</span>
+                </p>
+                <ul
+                  class="list-group px-5"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <li>
+                    Developed a
+                    <span class="text-brand fw-normal"
+                      >single-page e-commerce application</span
+                    >
+                    using <span class="text-brand fw-normal">React</span>,
+                    <span class="text-brand fw-normal">Node.js</span>, and
+                    <span class="text-brand fw-normal">TypeScript</span> within
+                    a
+                    <span class="text-brand fw-normal"
+                      >Micro-Frontend architecture</span
+                    >.
+                  </li>
+                  <li>
+                    Ensured
+                    <span class="text-brand fw-normal">project milestones</span>
+                    were met by adhering to
+                    <span class="text-brand fw-normal">Agile methodology</span>,
+                    leading to a
+                    <span class="text-brand fw-normal"
+                      >successful platform launch</span
+                    >.
+                  </li>
+                  <li>
+                    Conducted
+                    <span class="text-brand fw-normal">code reviews</span>,
+                    ensuring
+                    <span class="text-brand fw-normal">scalability</span>,
+                    <span class="text-brand fw-normal">modularity</span>, and
+                    adherence to
+                    <span class="text-brand fw-normal"
+                      >accessibility best practices</span
+                    >.
+                  </li>
+                  <li>
+                    Maintained
+                    <span class="text-brand fw-normal">90% code coverage</span>
+                    using <span class="text-brand fw-normal">SonarQube</span>,
+                    enhancing
+                    <span class="text-brand fw-normal">maintainability</span>
+                    and <span class="text-brand fw-normal">security</span>.
+                  </li>
+                  <li>
+                    Participated in
+                    <span class="text-brand fw-normal">design reviews</span>,
+                    ensuring
+                    <span class="text-brand fw-normal">consistency</span> and
+                    <span class="text-brand fw-normal">usability</span>
+                    across the platform.
+                  </li>
+                </ul>
+              </div>
+              <!-- divider here to separate -->
+              <hr class="my-4" />
+              <div>
+                <p
+                  class="lead mt-4 px-2"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <span class="fw-bold">Software Developer</span> |
+                  <span class="fw-bold">Infosys</span> |
+                  <span class="fw-bold text-brand">Jul 2021 - Jan 2024</span>
+                </p>
+                <ul
+                  class="list-group px-5"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <li>
+                    Developed
+                    <span class="text-brand fw-normal"
+                      >professional web applications</span
+                    >
+                    with
+                    <span class="text-brand fw-normal"
+                      >exceptional user experience</span
+                    >.
+                  </li>
+                  <li>
+                    Successfully resolved
+                    <span class="text-brand fw-normal">complex code issues</span
+                    >, contributing to the team's
+                    <span class="text-brand fw-normal">efficiency</span>.
+                  </li>
+                  <li>
+                    Proficiently used
+                    <span class="text-brand fw-normal">GitHub Co-pilot</span>
+                    and
+                    <span class="text-brand fw-normal">Prompt Engineering</span>
+                    to build
+                    <span class="text-brand fw-normal">automated webpages</span
+                    >.
+                  </li>
+                  <li>
+                    Cleared
+                    <span class="text-brand fw-normal"
+                      >multiple certifications</span
+                    >
+                    showcasing
+                    <span class="text-brand fw-normal"
+                      >comprehensive domain knowledge</span
+                    >.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -238,6 +452,43 @@
               </h1>
             </div>
             <div class="row">
+              <div
+                class="col-md-6 pb-5"
+                data-aos="fade-up"
+                data-aos-delay="150"
+                data-aos-easing="ease-in-sine"
+              >
+                <a
+                  href="https://fitnutrition.vercel.app"
+                  target="_blank"
+                  class="text-decoration-none"
+                  data-bs-toggle="tooltip"
+                  title="Click to open the app!"
+                >
+                  <div class="custom-card rounded-4 bg-base shadow-effect">
+                    <div class="custom-card-image rounded-4 pb-3">
+                      <img
+                        class="rounded-4"
+                        src="assets/images/fitnutrition.png"
+                        alt="FitNutrition App Image"
+                      />
+                    </div>
+                    <div class="custom-card-content px-2">
+                      <h5 class="text-brand">FitNutrition</h5>
+                      <p class="pb-3">
+                        A personal nutrition & fitness assistant built
+                        independently using modern web technologies. This
+                        project showcases my full-stack capabilities — including
+                        frontend, backend, and deployment.
+                      </p>
+                      <p class="text-center fw-bold text-brand">
+                        <i class="fa-solid fa-arrow-right"></i> Click to explore
+                        FitNutrition!
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
               <div
                 class="col-md-6 pb-5"
                 data-aos="fade-up"
@@ -448,7 +699,7 @@
       <section id="contact" class="full-height px-lg-5">
         <div class="container">
           <div class="row justify-content-center text-center">
-            <div class="col-lg-8 pb-2">
+            <div class="col-lg-8 mb-4">
               <h1
                 class="text-brand fw-bold pb-2"
                 data-aos="fade-up"
@@ -456,18 +707,52 @@
               >
                 Contact Me
               </h1>
+              <p
+                class="lead"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-easing="ease-in-sine"
+              >
+                Feel free to reach out to me for collaborations, opportunities,
+                or just to say hi!
+              </p>
               <a
                 data-aos="fade-up"
                 data-aos-easing="ease-in-sine"
-                href="./assets/Yashwant_2_Years_MERN_Dev.pdf"
+                href="./assets/Yashwant.pdf"
                 title="Click to download my resume"
-                download="Yashwant_2+_Years_MERN_Dev.pdf"
+                download="Yashwant.pdf"
                 target="_blank"
                 class="btn btn-brand"
-                >Dowload Resume</a
+                ><i class="fa-solid fa-download me-2"></i>Dowload Resume</a
               >
             </div>
             <div class="row">
+              <div
+                class="col-md-4 pb-5"
+                data-aos="fade-up"
+                data-aos-delay="150"
+                data-aos-easing="ease-in-sine"
+              >
+                <a
+                  class="fw-bold text-brand"
+                  title="Chat with me on WhatsApp"
+                  target="_blank"
+                  href="https://wa.me/918109080341"
+                >
+                  <div
+                    class="contact-card text-brand rounded-4 bg-base shadow-effect"
+                  >
+                    <div class="contact-card-icon rounded-4 g-3 py-2">
+                      <i class="fa-brands fa-whatsapp fa-xl px-2"></i>
+                      WhatsApp Me
+                    </div>
+                    <div class="contact-card-content px-1">
+                      <h5 class="text-brand">+91-8109080341</h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
               <div
                 class="col-md-4 pb-5"
                 data-aos="fade-up"
